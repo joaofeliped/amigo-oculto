@@ -1,0 +1,15 @@
+{
+  "name": "amigo-oculto",
+  "version": "1.0.0",
+  "description": "Projeto para sorteio de amigo oculto.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "João Felipe",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "nodemailer": "^4.6.8"
+  }
+}
