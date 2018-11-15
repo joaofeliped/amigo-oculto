@@ -1,7 +1,7 @@
 const pessoas = require('./pessoas');
 const mail = require('./mail');
 
-let sortear = () => {
+const sortear = () => {
     pessoas.buscarNomes((data) => {
         let lista = data.slice();
 
@@ -17,11 +17,17 @@ let sortear = () => {
         for(var i = 0; i < data.length; i++) {
             enviarEmail(data[i], lista[i]);
         }
+
+        gravarAmigosOcultos(data, lista);
     });
 }
 
-let enviarEmail = (pessoa, amigoOculto) => {
-    mail.enviarEmail(pessoa, amigoOculto);
+const enviarEmail = (pessoa, amigoOculto) => {
+   // mail.enviarEmail(pessoa, amigoOculto);
 }
+
+const gravarAmigosOcultos = (pessoas, amigos) => {
+    pessoas.gravarAmigos(pessoas, amigos); 
+}    
 
 sortear();

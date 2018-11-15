@@ -39,5 +39,6 @@ function hmtlMessage(pessoa, amigoOculto) {
 }
 
 module.exports = {
-    enviarEmail: enviarEmail
+    enviarEmail: enviarEmail,
+    hmtlMessage:hmtlMessage
 }
