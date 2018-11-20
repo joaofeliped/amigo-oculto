@@ -1,3 +1,4 @@
+const fs = require('fs');
 const pessoas = require('./pessoas');
 const mail = require('./mail');
 
@@ -27,7 +28,29 @@ const enviarEmail = (pessoa, amigoOculto) => {
 }
 
 const gravarAmigosOcultos = (pessoas, amigos) => {
-    pessoas.gravarAmigos(pessoas, amigos); 
+    gravarAmigos(pessoas, amigos); 
 }    
+
+const gravarAmigos = (pessoas, amigos) => {
+    const resultado = [];
+
+    for(var i = 0; i < pessoas.length; i++) {
+        pessoas[i].amigoOcultoId = amigos[i].id;
+
+        resultado.push(pessoas[i]);
+    }
+
+    gravarJson(JSON.stringify(resultado));
+}
+
+const gravarJson = (amigos) => {
+    fs.writeFile('.amigos_sorteados.json', amigos, {mode: 0400}, (err) => {
+        if(err) {
+            console.log('Erro ao gravar o arquivo');
+        } else {
+            console.log('Arquivo gravado com sucesso');
+        }
+    });
+}
 
 sortear();

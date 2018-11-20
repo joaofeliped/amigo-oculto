@@ -10,12 +10,12 @@ const gravarAmigos = (pessoas, amigos) => {
     const resultado = [];
 
     for(var i = 0; i < pessoas.length; i++) {
-        pessoas[i].amigoOculto = amigos[i];
+        pessoas[i].amigoOcultoId = amigos[i].id;
 
         resultado.push(pessoas[i]);
     }
 
-    gravarJson(resultado);
+    gravarJson(JSON.stringify(resultado));
 }
 
 const gravarJson = (amigos) => {
