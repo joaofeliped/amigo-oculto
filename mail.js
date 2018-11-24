@@ -16,9 +16,11 @@ sgMail.setApiKey('SG.MW_gcezlSFyd2MpyzUJ-0w.QH93zln8Ev6ZOZY4b1R3qkaMxE-MUB8e6Q4u
       subject: 'Esse e-mail é para o amigo oculto de ' + pessoa.nome,
       html: hmtlMessage(pessoa, amigoOculto)
     };
+
     
     sgMail.send(msg).then((sent) => {
-      console.log(sent);
+      console.log('email enviado para ' + pessoa.nome);
+      //console.log(sent);
     }).catch(error => {
       console.error(error.toString());
     });

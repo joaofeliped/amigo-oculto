@@ -3,20 +3,121 @@
         "id": 1,
         "nome": "João Felipe",
         "email": "jo_5919@hotmail.com",
-        "sugestoes": [
-            "teste",
-            "teste",
-            "teste"
+        "sugestoes": [ 
+            "Bermuda tamanho 40", 
+            "Vale Presente de qualquer livraria",
+            "Camiseta polo lisa tamanho G"
         ]
     },
     {
         "id": 2,
-        "nome": "Danielle",
-        "email": "danielledrago@yahoo.com.br",
+        "nome": "Soares",
+        "email": "soaresthorpe@yahoo.com.br",
+        "sugestoes": [ 
+            "Pijama manga curta tamanho M da Hering",
+            "Camisa polo M",
+            "Camiseta cor básica tamanho M"
+        ]
+    },
+    {
+        "id": 3,
+        "nome": "Daniel caixeta",
+        "email": "daniel00cd@yahoo.com.br",
+        "sugestoes": [ 
+            "Pijama manga curta tamanho g da Hering",
+            "Camisa polo g",
+            "Camiseta cor básica tamanho g"
+        ]
+
+    },
+    {
+        "id": 4,
+        "nome": "Gabi",
+        "email": "gabrielledrago@gmail.com",
         "sugestoes": [
-            "teste",
-            "teste",
-            "teste"
+            "Blusa preta ou branca",
+            "Livro último do Harry Potter",
+            "Planner 2019 que vende na Cultura"
+        ]    
+    },
+    {
+        "id": 5,
+        "nome": "Silvinha",
+        "email": "coutinho.silvia@gmail.com",
+        "sugestoes": [
+            "Capinha de celular “genérica” para iPhone 8",
+            "Esponjinha e/ou pincéis de maquiagem ",
+            "Blusa básica branca tamanho M"
+        ]
+    },
+    {
+        "id": 6,
+        "nome": "Solange",
+        "email": "coutinho.silvia@gmail.com",
+        "sugestoes": [
+            "Capinha de celular para Samsung J2",
+            "Sabonetes da Granado",
+            "Guarda-chuva compacto colorido"
+        ]
+    },
+    {
+        "id": 7,
+        "nome": "Sérgio",
+        "email": "coutinho.silvia@gmail.com",
+        "sugestoes": [
+            "Guarda-chuva compacto preto",
+            "Talco da Granado",
+            "Creme de barbear Bozanno"
+        ]
+    },
+    {
+        "id": 8,
+        "nome": "Daniel Pessanha",
+        "email": "dan_gui2@hotmail.com", 
+        "sugestoes": [ 
+            "Livros do star wars",
+            "Cartão da PSN",
+            "cartão da STEAM"
+        ]
+    },
+    {
+        "id": 9,
+        "nome": "Danielle Drago",
+        "email": "danielledrago@yahoo.com.br",
+        "sugestoes": [ 
+            "Sapatilha PRETA 34",
+            "Creme de cabelo uniq one da revlon",
+            "Maquiagem da SEPHORA"
+        ]
+    },
+    {
+        "id": 10,
+        "nome": "Soraya Drago",
+        "email": "sorayadrago@yahoo.com.br",
+        "sugestoes": [ 
+            "Sapatilha PRETA 34",
+            "Blusa para  noite tamanho P ou 38",
+            "Camisola tamanho P ou 38"
+        ]
+    }, 
+    {
+        "id": 11,
+        "nome": "Cláudia Maria",
+        "email": "claudiamdias@uol.com.br",
+        "sugestoes": [
+            "Vale presente da Granado",
+            "Perfumes de lavanda",
+            "Rasteirinhas n 38"
+        ]
+    }, 
+    {
+        "id": 12,
+        "nome": "João Amaro", 
+        "email": "joaoaap@gmail.com",
+        "sugestoes": [ 
+            "Caneta", 
+            "Camiseta polo lisa tamanho M",
+            "Camiseta T-shirt lisa tamanho M"
         ]
     }
 ]

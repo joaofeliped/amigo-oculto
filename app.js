@@ -24,7 +24,10 @@ const sortear = () => {
 }
 
 const enviarEmail = (pessoa, amigoOculto) => {
-   // mail.enviarEmail(pessoa, amigoOculto);
+   /* if(pessoa.email.contains('hotmail')) {
+        console.log(pessoa.email);
+        //mail.enviarEmail(pessoa, amigoOculto);
+    }*/
 }
 
 const gravarAmigosOcultos = (pessoas, amigos) => {
@@ -44,7 +47,7 @@ const gravarAmigos = (pessoas, amigos) => {
 }
 
 const gravarJson = (amigos) => {
-    fs.writeFile('.amigos_sorteados.json', amigos, {mode: 0400}, (err) => {
+    fs.writeFile('.amigos_sorteados_teste.json', amigos, (err) => {
         if(err) {
             console.log('Erro ao gravar o arquivo');
         } else {

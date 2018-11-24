@@ -1,8 +1,26 @@
 const fs = require('fs');
 
+const arquivoPessoasSorteadas = './.amigos_sorteados_teste.json';
+
 const buscarNomes = (callback) => {
     fs.readFile('./pessoas.json', 'utf8', (err, data) => {
         callback(JSON.parse(data));
+    });
+}
+
+const buscarPessoaAmigoSorteado = (id, callback) => {
+    fs.readFile(arquivoPessoasSorteadas, 'utf8', (err, data) => {
+        const pessoas = JSON.parse(data);
+        let pessoa;
+
+        for(var i = 0; i < pessoas.length; i++) {
+            if(pessoas[i].id == id) {
+                pessoa = pessoas[i];
+            }
+        }
+        
+        
+        callback(pessoa);
     });
 }
 
@@ -30,5 +48,6 @@ const gravarJson = (amigos) => {
 
 module.exports = {
     buscarNomes: buscarNomes,
-    gravarAmigos: gravarAmigos
+    gravarAmigos: gravarAmigos,
+    buscarPessoaAmigoSorteado: buscarPessoaAmigoSorteado
 }
