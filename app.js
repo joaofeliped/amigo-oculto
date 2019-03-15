@@ -24,10 +24,8 @@ const sortear = () => {
 }
 
 const enviarEmail = (pessoa, amigoOculto) => {
-   /* if(pessoa.email.contains('hotmail')) {
-        console.log(pessoa.email);
-        //mail.enviarEmail(pessoa, amigoOculto);
-    }*/
+    console.log(pessoa.email);
+    //mail.enviarEmail(pessoa, amigoOculto);
 }
 
 const gravarAmigosOcultos = (pessoas, amigos) => {
