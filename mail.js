@@ -1,8 +1,5 @@
 const sgMail = require('@sendgrid/mail');
 const util = require('./util');
-
-sgMail.setApiKey('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');
-//sgMail.setApiKey('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');
  
 
 
